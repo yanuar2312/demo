@@ -1,0 +1,5 @@
+pallet colour: 
+#393232
+#4D4545
+#8D6262
+#ED8D8D

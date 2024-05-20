@@ -1,0 +1,173 @@
+/* Gaya CSS untuk Navbar */
+.navbar {
+    background: linear-gradient(90deg, #393232, #4D4545); /* Gradasi warna latar belakang navbar */
+    border-bottom: 2px solid #4D4545; /* Garis bawah navbar */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Shadow tipis */  
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #ED8D8D; /* Warna teks nama perusahaan */
+}
+
+.navbar-brand img {
+    margin-right: 5px; /* Jarak antara logo dan teks */
+}
+
+.navbar-toggler-icon {
+    background-color: #ED8D8D; /* Warna ikon tombol toggler */
+}
+
+.navbar-nav .nav-link {
+    color: #ED8D8D; /* Warna teks menu navbar */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #8D6262; /* Warna teks menu navbar saat dihover */
+}
+
+/* Efek Fade-In dan Slide-Up */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fade-in-up {
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+/* Gaya CSS untuk Jumbotron */
+.jumbotron {
+    background: url('https://media.istockphoto.com/id/986504632/id/foto/bidikan-detail-dengan-pusat-komando-monitor-pengawasan-keamanan.jpg?s=2048x2048&w=is&k=20&c=5hUH8tkbrb7tGry6qkgcY37U1HSE2qGE-EDbOqSL928=') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+#company-logo {
+    width: 150px;
+    height: 150px;
+    border: 5px solid white;
+    margin-bottom: 20px; /* Tambahan jarak bawah logo */
+}
+
+/* Gaya CSS untuk CTA */
+.cta {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    text-align: center;
+}
+
+.cta a {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    background-color: #25d366; /* Warna hijau WhatsApp */
+    color: white;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow untuk CTA */
+}
+
+.cta a i {
+    font-size: 2rem; /* Ukuran ikon lebih besar */
+}
+
+
+/* Gaya CSS untuk Statistik Prestasi */
+.stat-item {
+    margin-bottom: 20px;
+}
+
+.stat-item i {
+    color: #ED8D8D;
+}
+
+.stat-item h3 {
+    margin-top: 10px;
+    color: #393232;
+}
+
+.stat-item p {
+    color: #4D4545;
+}
+
+/* Gaya untuk Carousel */
+.carousel{
+    padding: 80px 0 80px 0;
+}
+
+/* Gaya untuk logo perusahaan dalam carousel */
+.carousel-item img {
+    width: 100px;
+    height: auto; /* agar proporsi asli gambar tetap terjaga */
+    transition: transform 0.3s ease; /* transisi untuk efek hover */
+}
+
+.carousel-item img:hover {
+    transform: scale(1.1); /* efek zoom saat dihover */
+}
+
+/* Gaya untuk tanda panah carousel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #4D4545;
+    border-radius: 50%;
+    padding: 10px; /* Opsional, agar ikon lebih besar dan terlihat lebih jelas */
+}
+
+/* Gaya untuk card perusahaan */
+.company-card {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 500px;
+    z-index: 1000;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+/* Gaya untuk overlay */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.activity-img {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.activity-img:hover {
+    transform: scale(1.05);
+}
